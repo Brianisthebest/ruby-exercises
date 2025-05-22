@@ -1,4 +1,5 @@
 require 'rspec'
+require 'pry'
 require_relative 'leather_chair'
 
 RSpec.describe LeatherChair do
@@ -8,7 +9,7 @@ RSpec.describe LeatherChair do
     expect(chair.faded?).to be false
   end
 
-  xit 'becomes faded when exposed to sunlight' do
+  it 'becomes faded when exposed to sunlight' do
     chair = LeatherChair.new
 
     chair.expose_to_sunlight
